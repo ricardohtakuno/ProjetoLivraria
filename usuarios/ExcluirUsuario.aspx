@@ -10,7 +10,47 @@
     <form id="form1" runat="server">
     <div>
     
+        <h2>Sistema de Livraria - Excluir Usuário</h2>
+    
     </div>
+        <asp:Label ID="Label1" runat="server" Text="Código: "></asp:Label>
+        <asp:Label ID="lblId" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Nome: "></asp:Label>
+        <asp:Label ID="lblNome" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label5" runat="server" Text="Sobrenome: "></asp:Label>
+        <asp:Label ID="lblSobrenome" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label7" runat="server" Text="Nome do Usuário: "></asp:Label>
+        <asp:Label ID="lblNome_Usuario" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label9" runat="server" Text="E-MAIL: "></asp:Label>
+        <asp:Label ID="lblEMAIL" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label12" runat="server" Text="Senha: "></asp:Label>
+        <asp:Label ID="lblSenha" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label11" runat="server" Text="Data do Cadastro: "></asp:Label>
+        <asp:Label ID="lblData" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/usuarios/IndexUsuario.aspx">Voltar</asp:HyperLink>
+        <br />
+        <br />
+        <asp:Label ID="lblErro" runat="server" Text="Mensagem"></asp:Label>
+        <br />
+        <br />
+        Tem certeza que deseja excluir?<br />
+        <br />
+        <asp:Button ID="btnSim" runat="server" OnClick="btnSim_Click" Text="Sim, pode continuar" />
     </form>
 </body>
 </html>

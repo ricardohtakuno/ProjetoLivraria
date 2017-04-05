@@ -18,12 +18,12 @@ public partial class Index : System.Web.UI.Page
 
     protected void btnEntrar_Click(object sender, EventArgs e)
     {
-        using (SqlConnection con = new SqlConnection("Server=AME0556344W10-1\\SQLEXPRESS;Database=DB_LIVRARIA;Trusted_Connection=Yes;"))
+        using (SqlConnection con = new SqlConnection("Server=ricardo-pc\\sqlexpress;Database=DB_LIVRARIA;Trusted_Connection=Yes;"))
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT * FROM TB_USUARIOS where NOME_USUARIO = @usuario AND SENHA = @senha", con))
+            using (SqlCommand cmd = new SqlCommand("SELECT * FROM TB_USUARIOS where NOME_USUARIO = @USU AND SENHA = @SEN", con))
             {
-                cmd.Parameters.AddWithValue("usuario", txtUsuario.Text);
-                cmd.Parameters.AddWithValue("senha", txtSenha.Text);
+                cmd.Parameters.AddWithValue("USU", txtUsuario.Text);
+                cmd.Parameters.AddWithValue("SEN", txtSenha.Text);
 
                 try
                 {

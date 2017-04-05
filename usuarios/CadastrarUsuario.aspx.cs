@@ -15,20 +15,23 @@ public partial class usuarios_CadastrarUsuario : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        using (SqlConnection con = new SqlConnection("Server=ame0556344w10-1\\sqlexpress;Database=DB_LIVRARIA;Trusted_Connection=Yes"))
+        using (SqlConnection con = new SqlConnection("Server=RICARDO-PC\\SQLEXPRESS;Database=DB_LIVRARIA;Trusted_Connection=Yes"))
         {
-            using (SqlCommand cmd = new SqlCommand("INSERT INTO TB_USUARIOS (NOME, SOBRENOME, USUARIO, E-MAIL, SENHA, DATA DO CADASTRO) VALUES (@TIT, @AUT, @CON)", con))
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO TB_USUARIOS (NOME, SOBRENOME, NOME_USUARIO, EMAIL, SENHA, DATA_CADASTRO) VALUES (@NOM, @SOB, @USU, @EMA, @SEN, @DAT)", con))
             {
-                cmd.Parameters.AddWithValue("TIT", txtTitulo.Text);
-                cmd.Parameters.AddWithValue("AUT", txtAutor.Text);
-                cmd.Parameters.AddWithValue("CON", txtConteudo.Text);
+                cmd.Parameters.AddWithValue("NOM", txtNome.Text);
+                cmd.Parameters.AddWithValue("SOB", txtSobrenome.Text);
+                cmd.Parameters.AddWithValue("USU", txtUsuario.Text);
+                cmd.Parameters.AddWithValue("EMA", txtEMAIL.Text);
+                cmd.Parameters.AddWithValue("SEN", txtSenha.Text);
+                cmd.Parameters.AddWithValue("DAT", txtData.Text);
 
                 try
                 {
                     con.Open();
                     if (cmd.ExecuteNonQuery() > -1)
                     {
-                        lblMensagem.Text = "Post cadastrado com sucesso";
+                        lblMensagem.Text = "Usuário cadastrado com sucesso";
                     }
                 }
                 catch (Exception ex)

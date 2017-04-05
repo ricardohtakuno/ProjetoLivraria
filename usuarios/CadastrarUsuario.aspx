@@ -45,7 +45,7 @@
         <asp:Label ID="lblMensagem" runat="server" Text="Label"></asp:Label>
         <br />
         <br />
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/PainelAdmin.aspx">Voltar</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/usuarios/IndexUsuario.aspx">Voltar</asp:HyperLink>
     </form>
 </body>
 </html>
