@@ -17,14 +17,13 @@ public partial class usuarios_CadastrarUsuario : System.Web.UI.Page
     {
         using (SqlConnection con = new SqlConnection("Server=RICARDO-PC\\SQLEXPRESS;Database=DB_LIVRARIA;Trusted_Connection=Yes"))
         {
-            using (SqlCommand cmd = new SqlCommand("INSERT INTO TB_USUARIOS (NOME, SOBRENOME, NOME_USUARIO, EMAIL, SENHA, DATA_CADASTRO) VALUES (@NOM, @SOB, @USU, @EMA, @SEN, @DAT)", con))
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO TB_USUARIOS (NOME, SOBRENOME, NOME_USUARIO, EMAIL, SENHA) VALUES (@NOM, @SOB, @USU, @EMA, @SEN)", con))
             {
                 cmd.Parameters.AddWithValue("NOM", txtNome.Text);
                 cmd.Parameters.AddWithValue("SOB", txtSobrenome.Text);
                 cmd.Parameters.AddWithValue("USU", txtUsuario.Text);
                 cmd.Parameters.AddWithValue("EMA", txtEMAIL.Text);
                 cmd.Parameters.AddWithValue("SEN", txtSenha.Text);
-                cmd.Parameters.AddWithValue("DAT", txtData.Text);
 
                 try
                 {

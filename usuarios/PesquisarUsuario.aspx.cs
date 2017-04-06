@@ -10,12 +10,12 @@ public partial class usuarios_PesquisarUsuario : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string codigo = Request.QueryString["ID_CADASTRO"];
+        string codigo = Request.QueryString["id"];
         lblId.Text = codigo;
 
         using (SqlConnection con = new SqlConnection("Server=RICARDO-PC\\SQLEXPRESS;Database=DB_LIVRARIA;Trusted_Connection=Yes;"))
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT * FROM TB_USUARIOS where ID_CADASTRO = " + codigo, con))
+            using (SqlCommand cmd = new SqlCommand("SELECT * FROM TB_USUARIOS where ID_USUARIO = " + codigo, con))
             {
                 try
                 {
@@ -27,7 +27,7 @@ public partial class usuarios_PesquisarUsuario : System.Web.UI.Page
                     lblUsuario.Text = sdrInfUsuarios.GetString(3);
                     lblEMAIL.Text = sdrInfUsuarios.GetString(4);
                     lblSenha.Text = sdrInfUsuarios.GetString(5);
-                    lblData.Text = sdrInfUsuarios.GetString(6);
+                    lblData.Text = sdrInfUsuarios.GetDateTime(6).ToString();
                 }
                 catch
                 {

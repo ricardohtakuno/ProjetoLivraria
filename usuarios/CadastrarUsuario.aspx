@@ -35,8 +35,6 @@
         <asp:TextBox ID="txtSenha" runat="server" Width="217px"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label6" runat="server" Text="Data do Cadastro: "></asp:Label>
-        <asp:TextBox ID="txtData" runat="server" Width="143px"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Cadastrar" />

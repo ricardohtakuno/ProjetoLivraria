@@ -32,9 +32,15 @@
         <p style="font-weight: 700">
             Produtos</p>
         <ul>
-            <li>Cadastrar novo</li>
-            <li>Listar todos</li>
-            <li>Pesquisar</li>
+            <li>
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/produtos/CadastrarProduto.aspx">Cadastrar novo</asp:HyperLink>
+            </li>
+            <li>
+                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/produtos/IndexProduto.aspx">Listar todos</asp:HyperLink>
+            </li>
+            <li>
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/produtos/PesquisarProduto.aspx">Pesquisar</asp:HyperLink>
+            </li>
         </ul>
     
     </div>
