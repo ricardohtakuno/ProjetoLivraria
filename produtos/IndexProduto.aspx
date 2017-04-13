@@ -4,16 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" type="text/css" href="../estilo.css" />
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div class="titulo">
     
         <h1>Sistema de Livraria - Index</h1>
     
     </div>
         <br />
+        <div id="area_index">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/produtos/CadastrarProduto.aspx">Cadastrar novo produto</asp:HyperLink>
         <br />
         <br />
@@ -34,6 +36,7 @@
                 &nbsp;
             </ItemTemplate>
         </asp:DataList>
+        </div>
     </form>
 </body>
 </html>

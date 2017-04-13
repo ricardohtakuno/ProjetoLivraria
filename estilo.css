@@ -53,3 +53,24 @@ fieldset {
     margin-left: 40px;
     margin-top: 40px;
 }
+
+#area_index {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.titulo h1 {
+    font-size: 28px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#dtlProdutos tr {
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+}
+
+#Label1 {
+    font-size: 20px;
+}
