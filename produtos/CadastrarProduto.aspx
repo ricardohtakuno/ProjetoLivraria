@@ -18,31 +18,31 @@
         <fieldset>
         <div class="campo">
         <asp:Label ID="Label1" runat="server" Text="Nome: "></asp:Label>
-        <asp:TextBox ID="txtNome" runat="server" Width="300px"></asp:TextBox>
+        <asp:TextBox ID="txtNome" runat="server" Width="400px"></asp:TextBox>
         </div>
         <br />
         <br />
         <div class="campo">
         <asp:Label ID="Label2" runat="server" Text="Tipo: "></asp:Label>
-        <asp:TextBox ID="txtTipo" runat="server" Width="300px"></asp:TextBox>
+        <asp:TextBox ID="txtTipo" runat="server" Width="400px"></asp:TextBox>
         </div>
         <br />
         <br />
         <div class="campo">
         <asp:Label ID="Label3" runat="server" Text="Quantidade: "></asp:Label>
-        <asp:TextBox ID="txtQuantidade" runat="server" Width="300px"></asp:TextBox>
+        <asp:TextBox ID="txtQuantidade" runat="server" Width="400px"></asp:TextBox>
         </div>
         <br />
         <br />
         <div class="campo">
         <asp:Label ID="Label4" runat="server" Text="Preço da Compra: "></asp:Label>
-        <asp:TextBox ID="txtCompra" runat="server" Width="300px"></asp:TextBox>
+        <asp:TextBox ID="txtCompra" runat="server" Width="400px"></asp:TextBox>
         </div>
         <br />
         <br />
         <div class="campo">
         <asp:Label ID="Label5" runat="server" Text="Preço da Venda: "></asp:Label>
-        <asp:TextBox ID="txtVenda" runat="server" Width="300px"></asp:TextBox>
+        <asp:TextBox ID="txtVenda" runat="server" Width="400px"></asp:TextBox>
         </div>
         <br />
         <br />
